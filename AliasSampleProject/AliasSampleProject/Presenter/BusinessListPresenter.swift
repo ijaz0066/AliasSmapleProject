@@ -26,8 +26,8 @@ class BusinessListPresenter {
         self.businessListViewDelegate = businessListViewDelegate
     }
     
-    func fetchBusinesses() {
-        BusinessService.shared.fetchBusinesses(searchString: searchString) { (response) in
+    func fetchBusinesses(latitude: Float, longitude: Float) {
+        BusinessService.shared.fetchBusinesses(searchString: searchString, latitude: latitude, longitude: longitude) { (response) in
             print(response.businesses)
             self.businessListViewDelegate?.displayBusinesses(businesses: response.businesses)
         }

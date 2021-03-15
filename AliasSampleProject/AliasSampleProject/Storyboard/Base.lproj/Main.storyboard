@@ -35,12 +35,12 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="CzK-vW-Ezm"/>
                         <barButtonItem key="rightBarButtonItem" title="Refresh" id="hWc-Cy-Xug">
                             <connections>
-                                <action selector="RefreshLocation:" destination="BYZ-38-t0r" id="qVr-De-B3O"/>
+                                <action selector="RefreshLocation:" destination="BYZ-38-t0r" id="TDC-Fe-6oy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="businessTableView" destination="qPd-AS-bq6" id="QkZ-O3-WnN"/>
+                        <outlet property="businessTableView" destination="qPd-AS-bq6" id="Htp-cZ-tK9"/>
                         <segue destination="wZJ-Kk-Pma" kind="show" identifier="goToDetailViewController" id="fMQ-2q-n1D"/>
                     </connections>
                 </viewController>
@@ -74,12 +74,12 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="JOk-pF-R0x"/>
                         <barButtonItem key="rightBarButtonItem" title="Refresh" id="NIf-A5-PJR">
                             <connections>
-                                <action selector="RefreshLocation:" destination="QoB-36-AvY" id="nKL-VO-csv"/>
+                                <action selector="RefreshLocation:" destination="QoB-36-AvY" id="HDL-3T-CEo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="groceryTableView" destination="wSi-9v-Vrk" id="3zi-tJ-7J2"/>
+                        <outlet property="businessTableView" destination="wSi-9v-Vrk" id="QK3-Un-3AI"/>
                         <segue destination="wZJ-Kk-Pma" kind="show" identifier="goToDetailViewController" id="RPf-fw-cV6"/>
                     </connections>
                 </viewController>

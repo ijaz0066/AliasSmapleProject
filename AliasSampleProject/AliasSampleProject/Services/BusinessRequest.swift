@@ -13,9 +13,11 @@ struct BusinessRequest {
     let authHeader = HTTPHeader(name: "Authorization", value: "Bearer" + " " + YelpApiUrl.apiKey)
     
     init() {}
-    
-    func getRequest(searchString: String) -> DataRequest {
+    //make requests here
+    func getRequest(searchString: String, latitude: Float, longitude: Float) -> DataRequest {
         
-        return AF.request(YelpApiUrl.businessSearch(), method: .get, parameters: ["term":searchString, "location":"New York City"], headers: [authHeader] )
+        return AF.request(YelpApiUrl.businessSearch(), method: .get, parameters: ["term":searchString, "latitude":latitude, "longitude": longitude], headers: [authHeader] )
     }
+    
+    
 }

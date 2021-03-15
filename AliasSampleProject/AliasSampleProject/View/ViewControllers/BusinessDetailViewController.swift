@@ -11,7 +11,6 @@ import Cosmos
 class BusinessDetailViewController: UIViewController {
     
     //MARK:- IBoutlets
-    
     @IBOutlet weak var businessImageView: UIImageView!
     @IBOutlet weak var bName: UILabel!
     @IBOutlet weak var bNumber: UILabel!
@@ -24,12 +23,10 @@ class BusinessDetailViewController: UIViewController {
     //MARK:- Inject
     var business: Business!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         showBusinessDetail()
         self.title = business.name
-
         // Do any additional setup after loading the view.
     }
     
