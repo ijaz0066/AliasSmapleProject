@@ -66,7 +66,13 @@ extension BusinessViewController {
         case .denied, .restricted:
             Common.showAlert(vc: self, title: "Location Access", message: "We need your current location to show you near by Resturants. Please give us location access from settings")
         default:
-            LocationManager.shared.getUserLocation()
+            let coordinates = LocationManager.shared.getUserLocation()
+            if coordinates != nil {
+                businessesListPresenter.fetchBusinesses(latitude: Float(coordinates!.latitude), longitude: Float(coordinates!.longitude))
+            }
+            else {
+                businessesListPresenter.fetchBusinesses(latitude: 40.596309, longitude: -73.977697)
+            }
         }
     }
 }
@@ -78,9 +84,6 @@ extension BusinessViewController: BusinessListViewDelegate {
     
 }
 extension BusinessViewController: LocationManagerDelegate {
-    func didUpdateLocation(coordinates: CLLocationCoordinate2D) {
-        businessesListPresenter.fetchBusinesses(latitude: Float(coordinates.latitude), longitude: Float(coordinates.longitude))
-    }
     
     func didUpdateAuthorizationStatus(status: CLAuthorizationStatus) {
         updateUserLocation(status: status)

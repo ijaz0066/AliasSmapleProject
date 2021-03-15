@@ -10,7 +10,6 @@ import CoreLocation
 
 protocol LocationManagerDelegate: class {
     
-    func didUpdateLocation(coordinates: CLLocationCoordinate2D)
     func didUpdateAuthorizationStatus(status: CLAuthorizationStatus)
 }
 
@@ -58,20 +57,13 @@ extension LocationManager {
         return locationManager.authorizationStatus
     }
     
-    func getUserLocation() {
-        locationManager.startUpdatingLocation()
+    func getUserLocation() -> CLLocationCoordinate2D? {
+        return locationManager.location?.coordinate
     }
 }
 
 //MARK:- CLLocationManagerDelegate
 extension LocationManager: CLLocationManagerDelegate {
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-        locationCoordinates = locValue
-        self.locationManagerDelegate?.didUpdateLocation(coordinates: locValue)
-        locationManager.stopUpdatingLocation()
-    }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         self.locationManagerDelegate?.didUpdateAuthorizationStatus(status: manager.authorizationStatus)
