@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="200" id="KGk-i7-Jjw" customClass="BusinessListTableViewCell" customModule="AliasSampleProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rPL-NJ-DbI">
+                        <rect key="frame" x="10" y="15" width="70" height="70"/>
+                        <color key="backgroundColor" red="0.4489609772" green="0.13912199459999999" blue="0.18959131239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="edG-1N-2Dj"/>
+                            <constraint firstAttribute="width" constant="70" id="tV6-AU-12P"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tandoori Host" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHQ-6B-m66">
+                        <rect key="frame" x="88" y="11" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="LDD-wm-0sM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vaughan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRL-tr-0vh">
+                        <rect key="frame" x="88" y="37" width="212" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="212" id="4kz-Rl-MS4"/>
+                            <constraint firstAttribute="height" constant="21" id="oaZ-aP-WRe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1(647) 345-9870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9I3-mA-zSu">
+                        <rect key="frame" x="88" y="63" width="212" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="212" id="u0m-Ts-Twa"/>
+                            <constraint firstAttribute="height" constant="21" id="wKD-cZ-azK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                        <color key="textColor" red="0.26274509800000001" green="0.51764705879999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDC-zE-oZV">
+                        <rect key="frame" x="347" y="31" width="45" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="iUV-mr-IP7"/>
+                            <constraint firstAttribute="height" constant="38" id="oXL-wu-whM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="25"/>
+                        <color key="textColor" red="0.4489609772" green="0.13912199459999999" blue="0.18959131239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="XHQ-6B-m66" secondAttribute="trailing" constant="10" id="25y-EB-Bnd"/>
+                    <constraint firstItem="9I3-mA-zSu" firstAttribute="top" secondItem="tRL-tr-0vh" secondAttribute="bottom" constant="5" id="26H-Gs-nj6"/>
+                    <constraint firstItem="XHQ-6B-m66" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="EHx-Mc-NB1"/>
+                    <constraint firstItem="rPL-NJ-DbI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Enw-ce-BD5"/>
+                    <constraint firstItem="tRL-tr-0vh" firstAttribute="top" secondItem="XHQ-6B-m66" secondAttribute="bottom" constant="5" id="F7a-xh-lrO"/>
+                    <constraint firstItem="9I3-mA-zSu" firstAttribute="leading" secondItem="rPL-NJ-DbI" secondAttribute="trailing" constant="8" symbolic="YES" id="JZB-F4-Lga"/>
+                    <constraint firstAttribute="trailing" secondItem="TDC-zE-oZV" secondAttribute="trailing" constant="10" id="cBH-Rc-fXL"/>
+                    <constraint firstItem="TDC-zE-oZV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eyP-qM-05K"/>
+                    <constraint firstItem="XHQ-6B-m66" firstAttribute="leading" secondItem="rPL-NJ-DbI" secondAttribute="trailing" constant="8" symbolic="YES" id="oNx-vg-8Wk"/>
+                    <constraint firstItem="tRL-tr-0vh" firstAttribute="leading" secondItem="rPL-NJ-DbI" secondAttribute="trailing" constant="8" symbolic="YES" id="vt7-1y-odb"/>
+                    <constraint firstItem="rPL-NJ-DbI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="y4m-Dy-4ZN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imgView" destination="rPL-NJ-DbI" id="x8t-Zt-aI0"/>
+                <outlet property="location" destination="tRL-tr-0vh" id="yvN-p1-RHy"/>
+                <outlet property="name" destination="XHQ-6B-m66" id="awg-HA-Ac4"/>
+                <outlet property="phone" destination="9I3-mA-zSu" id="1N1-aN-DOb"/>
+                <outlet property="rating" destination="TDC-zE-oZV" id="9iH-q6-xfh"/>
+            </connections>
+            <point key="canvasLocation" x="197.10144927536234" y="104.46428571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

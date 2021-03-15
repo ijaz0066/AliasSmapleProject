@@ -12,7 +12,7 @@
 		6F303C46EFC431916EADA14B /* Pods_AliasSampleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B5F6C462DDB104E589B4EE /* Pods_AliasSampleProject.framework */; };
 		AB2F657C25FDDB090051282F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2F657B25FDDB090051282F /* AppDelegate.swift */; };
 		AB2F657E25FDDB090051282F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2F657D25FDDB090051282F /* SceneDelegate.swift */; };
-		AB2F658025FDDB090051282F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2F657F25FDDB090051282F /* ViewController.swift */; };
+		AB2F658025FDDB090051282F /* ResturantsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2F657F25FDDB090051282F /* ResturantsListViewController.swift */; };
 		AB2F658325FDDB090051282F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2F658125FDDB090051282F /* Main.storyboard */; };
 		AB2F658525FDDB0C0051282F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2F658425FDDB0C0051282F /* Assets.xcassets */; };
 		AB2F658825FDDB0C0051282F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2F658625FDDB0C0051282F /* LaunchScreen.storyboard */; };
@@ -21,6 +21,16 @@
 		AB3277F025FDE1E100A83EE0 /* YelpApiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3277EF25FDE1E100A83EE0 /* YelpApiUrl.swift */; };
 		AB3277F825FDE3DB00A83EE0 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3277F725FDE3DB00A83EE0 /* Business.swift */; };
 		AB3277FD25FDE49600A83EE0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3277FC25FDE49600A83EE0 /* Location.swift */; };
+		AB32781625FDEF2000A83EE0 /* ReuseableBusinessTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32781525FDEF2000A83EE0 /* ReuseableBusinessTableview.swift */; };
+		AB32782125FDEFBC00A83EE0 /* BusinessListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32781F25FDEFBC00A83EE0 /* BusinessListTableViewCell.swift */; };
+		AB32782225FDEFBC00A83EE0 /* BusinessListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB32782025FDEFBC00A83EE0 /* BusinessListTableViewCell.xib */; };
+		AB32782825FDF09000A83EE0 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32782725FDF09000A83EE0 /* Common.swift */; };
+		AB32783025FDF64700A83EE0 /* BusinessListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32782F25FDF64700A83EE0 /* BusinessListPresenter.swift */; };
+		AB32783525FDF7B200A83EE0 /* BusinessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32783425FDF7B200A83EE0 /* BusinessService.swift */; };
+		AB32783A25FDF7E700A83EE0 /* BusinessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32783925FDF7E700A83EE0 /* BusinessRequest.swift */; };
+		AB32786125FEB96200A83EE0 /* GroceriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32786025FEB96200A83EE0 /* GroceriesViewController.swift */; };
+		AB32786625FED5B500A83EE0 /* BusinessDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32786525FED5B500A83EE0 /* BusinessDetailViewController.swift */; };
+		AB32787C25FEDBC800A83EE0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB32787B25FEDBC800A83EE0 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +58,7 @@
 		AB2F657825FDDB090051282F /* AliasSampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliasSampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2F657B25FDDB090051282F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB2F657D25FDDB090051282F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB2F657F25FDDB090051282F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB2F657F25FDDB090051282F /* ResturantsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturantsListViewController.swift; sourceTree = "<group>"; };
 		AB2F658225FDDB090051282F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB2F658425FDDB0C0051282F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB2F658725FDDB0C0051282F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +72,16 @@
 		AB3277EF25FDE1E100A83EE0 /* YelpApiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpApiUrl.swift; sourceTree = "<group>"; };
 		AB3277F725FDE3DB00A83EE0 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		AB3277FC25FDE49600A83EE0 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		AB32781525FDEF2000A83EE0 /* ReuseableBusinessTableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseableBusinessTableview.swift; sourceTree = "<group>"; };
+		AB32781F25FDEFBC00A83EE0 /* BusinessListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListTableViewCell.swift; sourceTree = "<group>"; };
+		AB32782025FDEFBC00A83EE0 /* BusinessListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusinessListTableViewCell.xib; sourceTree = "<group>"; };
+		AB32782725FDF09000A83EE0 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		AB32782F25FDF64700A83EE0 /* BusinessListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListPresenter.swift; sourceTree = "<group>"; };
+		AB32783425FDF7B200A83EE0 /* BusinessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessService.swift; sourceTree = "<group>"; };
+		AB32783925FDF7E700A83EE0 /* BusinessRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRequest.swift; sourceTree = "<group>"; };
+		AB32786025FEB96200A83EE0 /* GroceriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesViewController.swift; sourceTree = "<group>"; };
+		AB32786525FED5B500A83EE0 /* BusinessDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewController.swift; sourceTree = "<group>"; };
+		AB32787B25FEDBC800A83EE0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B572017614979BA13DEA76A8 /* Pods-AliasSampleProject-AliasSampleProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliasSampleProject-AliasSampleProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-AliasSampleProject-AliasSampleProjectUITests/Pods-AliasSampleProject-AliasSampleProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC23A967607B3D499593C4B1 /* Pods-AliasSampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliasSampleProject.release.xcconfig"; path = "Target Support Files/Pods-AliasSampleProject/Pods-AliasSampleProject.release.xcconfig"; sourceTree = "<group>"; };
 		D6CBA036C92D4F41F263BF06 /* Pods-AliasSampleProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliasSampleProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AliasSampleProjectTests/Pods-AliasSampleProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,12 +165,14 @@
 		AB2F657A25FDDB090051282F /* AliasSampleProject */ = {
 			isa = PBXGroup;
 			children = (
+				AB32787A25FEDB9A00A83EE0 /* Extensions */,
 				AB3277EA25FDDBF700A83EE0 /* Appdelegate */,
 				AB3277EE25FDE1C700A83EE0 /* Services */,
 				AB3277E925FDDBF200A83EE0 /* Model */,
 				AB3277E825FDDBEB00A83EE0 /* Presenter */,
 				AB3277E725FDDBE000A83EE0 /* View */,
 				AB3277E625FDDBD500A83EE0 /* Storyboard */,
+				AB32782625FDF08100A83EE0 /* Helper */,
 				AB2F658425FDDB0C0051282F /* Assets.xcassets */,
 				AB2F658625FDDB0C0051282F /* LaunchScreen.storyboard */,
 				AB2F658925FDDB0C0051282F /* Info.plist */,
@@ -187,7 +209,10 @@
 		AB3277E725FDDBE000A83EE0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AB2F657F25FDDB090051282F /* ViewController.swift */,
+				AB32780725FDED6700A83EE0 /* SubViews */,
+				AB2F657F25FDDB090051282F /* ResturantsListViewController.swift */,
+				AB32786025FEB96200A83EE0 /* GroceriesViewController.swift */,
+				AB32786525FED5B500A83EE0 /* BusinessDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +220,7 @@
 		AB3277E825FDDBEB00A83EE0 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				AB32782F25FDF64700A83EE0 /* BusinessListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -221,8 +247,36 @@
 			isa = PBXGroup;
 			children = (
 				AB3277EF25FDE1E100A83EE0 /* YelpApiUrl.swift */,
+				AB32783425FDF7B200A83EE0 /* BusinessService.swift */,
+				AB32783925FDF7E700A83EE0 /* BusinessRequest.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		AB32780725FDED6700A83EE0 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				AB32781525FDEF2000A83EE0 /* ReuseableBusinessTableview.swift */,
+				AB32781F25FDEFBC00A83EE0 /* BusinessListTableViewCell.swift */,
+				AB32782025FDEFBC00A83EE0 /* BusinessListTableViewCell.xib */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		AB32782625FDF08100A83EE0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AB32782725FDF09000A83EE0 /* Common.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		AB32787A25FEDB9A00A83EE0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB32787B25FEDBC800A83EE0 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +389,7 @@
 			files = (
 				AB2F658825FDDB0C0051282F /* LaunchScreen.storyboard in Resources */,
 				AB2F658525FDDB0C0051282F /* Assets.xcassets in Resources */,
+				AB32782225FDEFBC00A83EE0 /* BusinessListTableViewCell.xib in Resources */,
 				AB2F658325FDDB090051282F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,10 +518,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB2F658025FDDB090051282F /* ViewController.swift in Sources */,
+				AB2F658025FDDB090051282F /* ResturantsListViewController.swift in Sources */,
 				AB3277FD25FDE49600A83EE0 /* Location.swift in Sources */,
+				AB32781625FDEF2000A83EE0 /* ReuseableBusinessTableview.swift in Sources */,
+				AB32787C25FEDBC800A83EE0 /* UIView+Extension.swift in Sources */,
 				AB2F657C25FDDB090051282F /* AppDelegate.swift in Sources */,
+				AB32786125FEB96200A83EE0 /* GroceriesViewController.swift in Sources */,
+				AB32786625FED5B500A83EE0 /* BusinessDetailViewController.swift in Sources */,
+				AB32783525FDF7B200A83EE0 /* BusinessService.swift in Sources */,
+				AB32783025FDF64700A83EE0 /* BusinessListPresenter.swift in Sources */,
+				AB32782825FDF09000A83EE0 /* Common.swift in Sources */,
 				AB3277F025FDE1E100A83EE0 /* YelpApiUrl.swift in Sources */,
+				AB32782125FDEFBC00A83EE0 /* BusinessListTableViewCell.swift in Sources */,
+				AB32783A25FDF7E700A83EE0 /* BusinessRequest.swift in Sources */,
 				AB3277F825FDE3DB00A83EE0 /* Business.swift in Sources */,
 				AB2F657E25FDDB090051282F /* SceneDelegate.swift in Sources */,
 			);

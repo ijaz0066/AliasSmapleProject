@@ -20,7 +20,7 @@ class Business: Decodable {
     var isClosed: Bool
     
     enum CodingKeys: String, CodingKey {
-        case id, name, rating,phone, url, location
+        case id, name, rating, phone, url, location
         case reviewCount = "review_count"
         case imageUrl = "image_url"
         case isClosed = "is_closed"
