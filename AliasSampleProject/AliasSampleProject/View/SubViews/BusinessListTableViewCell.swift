@@ -7,6 +7,7 @@
 
 import UIKit
 import SDWebImage
+import Cosmos
 
 class BusinessListTableViewCell: UITableViewCell {
     
@@ -15,14 +16,17 @@ class BusinessListTableViewCell: UITableViewCell {
     @IBOutlet weak var location: UILabel!
     @IBOutlet weak var phone: UILabel!
     @IBOutlet weak var rating: UILabel!
+    @IBOutlet weak var ratingView: CosmosView!
+    
     
     var business: Business? {
         didSet {
             guard let business = business else { fatalError("business not found") }
             name.text = business.name
-            location.text = business.location.address1
+            location.text = business.location.address1 + ", " + business.location.city
             phone.text = business.phone
             rating.text = String(business.rating)
+            ratingView.rating = business.rating
             
             imgView.sd_setImage(with: URL(string: business.imageUrl), placeholderImage: nil, options: .highPriority, completed: nil)
             imgView.roundCorners()

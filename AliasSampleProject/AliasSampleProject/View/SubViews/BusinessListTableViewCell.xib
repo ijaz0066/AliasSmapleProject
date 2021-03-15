@@ -34,9 +34,8 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vaughan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRL-tr-0vh">
-                        <rect key="frame" x="88" y="37" width="212" height="21"/>
+                        <rect key="frame" x="88" y="37" width="249" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="212" id="4kz-Rl-MS4"/>
                             <constraint firstAttribute="height" constant="21" id="oaZ-aP-WRe"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
@@ -44,9 +43,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1(647) 345-9870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9I3-mA-zSu">
-                        <rect key="frame" x="88" y="63" width="212" height="21"/>
+                        <rect key="frame" x="88" y="63" width="180" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="212" id="u0m-Ts-Twa"/>
+                            <constraint firstAttribute="width" constant="180" id="u0m-Ts-Twa"/>
                             <constraint firstAttribute="height" constant="21" id="wKD-cZ-azK"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
@@ -63,6 +62,37 @@
                         <color key="textColor" red="0.4489609772" green="0.13912199459999999" blue="0.18959131239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zqd-if-49Z" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="268" y="63" width="125" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="9Wc-eI-7Qv"/>
+                            <constraint firstAttribute="height" constant="20" id="Onf-JN-8Le"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="3.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" systemColor="systemOrangeColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" systemColor="systemOrangeColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
@@ -72,8 +102,11 @@
                     <constraint firstItem="rPL-NJ-DbI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Enw-ce-BD5"/>
                     <constraint firstItem="tRL-tr-0vh" firstAttribute="top" secondItem="XHQ-6B-m66" secondAttribute="bottom" constant="5" id="F7a-xh-lrO"/>
                     <constraint firstItem="9I3-mA-zSu" firstAttribute="leading" secondItem="rPL-NJ-DbI" secondAttribute="trailing" constant="8" symbolic="YES" id="JZB-F4-Lga"/>
+                    <constraint firstAttribute="trailing" secondItem="zqd-if-49Z" secondAttribute="trailing" constant="9" id="WU1-J2-z8v"/>
+                    <constraint firstItem="zqd-if-49Z" firstAttribute="top" secondItem="tRL-tr-0vh" secondAttribute="bottom" constant="5" id="a7l-Bw-giL"/>
                     <constraint firstAttribute="trailing" secondItem="TDC-zE-oZV" secondAttribute="trailing" constant="10" id="cBH-Rc-fXL"/>
                     <constraint firstItem="TDC-zE-oZV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eyP-qM-05K"/>
+                    <constraint firstItem="TDC-zE-oZV" firstAttribute="leading" secondItem="tRL-tr-0vh" secondAttribute="trailing" constant="10" id="l9D-qP-htU"/>
                     <constraint firstItem="XHQ-6B-m66" firstAttribute="leading" secondItem="rPL-NJ-DbI" secondAttribute="trailing" constant="8" symbolic="YES" id="oNx-vg-8Wk"/>
                     <constraint firstItem="tRL-tr-0vh" firstAttribute="leading" secondItem="rPL-NJ-DbI" secondAttribute="trailing" constant="8" symbolic="YES" id="vt7-1y-odb"/>
                     <constraint firstItem="rPL-NJ-DbI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="y4m-Dy-4ZN"/>
@@ -87,8 +120,19 @@
                 <outlet property="name" destination="XHQ-6B-m66" id="awg-HA-Ac4"/>
                 <outlet property="phone" destination="9I3-mA-zSu" id="1N1-aN-DOb"/>
                 <outlet property="rating" destination="TDC-zE-oZV" id="9iH-q6-xfh"/>
+                <outlet property="ratingView" destination="zqd-if-49Z" id="Yth-jy-Lr4"/>
             </connections>
             <point key="canvasLocation" x="197.10144927536234" y="104.46428571428571"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="zqd-if-49Z">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
